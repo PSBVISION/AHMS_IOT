@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <title>AHMS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div id="side-panel">
@@ -14,7 +15,7 @@
       </div>
       <ul>
         <li class="dashboard active">Dashboard</li>
-        <li class="registration">Registration</li>
+        <li class="notification">Notification</li>
         <li class="returned">Returned</li>
         <li class="community">Community</li>
         <li class="settings">Settings</li>
@@ -34,14 +35,24 @@
       <div class="activity">
         <div class="feature">
           <div class="heart">
-            <canvas></canvas>
+            <canvas id="heartChart"></canvas>
           </div>
-          <div class="gps"></div>
+          <div class="collection">
+            <div class="gps"></div>
+            <div class="bpm">
+              <canvas id="bpmChart"></canvas>
+            </div>
+          </div>
         </div>
-        <div class="summary"></div>
+        <div class="summary">
+          <h1 class="oxy">Oxygen Concentration</h1>
+          <canvas id="oxyChart"></canvas>
+          <span class="">94.8%</span>
+          <p class="oxyp">looks your pet is fine</p>
+        </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

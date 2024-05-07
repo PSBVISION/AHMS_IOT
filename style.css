@@ -77,7 +77,7 @@ li{
 }
 .banner{
   height: 25%;
-  margin: 8% 5%;
+  margin: 8% 5% 2% 5%;
   background-color: rgba(7, 148, 187, 0.675);
   border-radius: 25px;
   display: flex;
@@ -116,26 +116,62 @@ p{
   align-items: center;
 }
 .feature{
-  height: 100px;
-  width: 100px;
-  margin: 20px 105px;
-  background-color: tomato;
+  width: 65%;
+  background-color: #c6c4c43b;
+  margin: 0 2%;
+}
+.oxy{
+  margin: 10px 20%;
+  color: rgb(58, 58, 58);
+  text-align: center;
+}
+.oxyp{
+  margin: 10px;
+  color: rgb(58, 58, 58);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#oxyChart{
+  margin: 05px 50px;
+  
 }
 .summary{
-  height: 100px;
-  width: 100px;
-  margin: 20px 105px;
-  background-color: tomato;
+  margin: 0 2%;
+  width: 35%;
+  border-radius: 25px;
+  background-color: #c6c4c43b;
 }
-.heart{
-  height: 10px;
-  width: 10px;
-  margin: 20px 90px;
-  background-color: blueviolet;
+/* .heart{
+  width: 909x;
+} */
+#heartChart{
+  width: 650px;
+  padding-left: 80px;
+}
+.collection{
+  display: flex;
+  align-items: center;
+  /* padding: 20px; */
 }
 .gps{
-  height: 10px;
-  width: 10px;
-  margin: 20px;
-  background-color: blue;
+  height: 100px;
+  width: 200px;
+  margin: 15px 20px;
+  background-color: #bdbdbead;
+}
+.bpm{
+  height: 100px;
+  width: 300px;
+  margin: 15px 90px;
+  background-color: #bdbdbead;
+}
+span{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 500;
+  position: fixed;
+  top: 71%;
+  right: 11.5%;
 }
